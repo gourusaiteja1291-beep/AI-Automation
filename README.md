@@ -1,42 +1,58 @@
-# AI-Automation
+# AI Automation
 
-A Docker-based automation environment with n8n workflow engine and PostgreSQL.
+A production-ready AI automation platform built with Docker, n8n, and PostgreSQL.
 
-## Quick Start
+## 🚀 Tech Stack
 
-1. Copy `.env.example` to `.env` and configure your settings
-2. Run `docker-compose up -d`
-3. Access n8n at http://localhost:5678
+- Docker
+- Docker Compose
+- n8n
+- PostgreSQL
 
-## Services
-
-- **n8n**: Workflow automation tool (port 5678)
-- **PostgreSQL**: Database for n8n (port 5432)
-
-## Directory Structure
+## 📂 Project Structure
 
 ```
-├── docker-compose.yml    # Docker services configuration
-├── .env               # Environment variables (not tracked)
-├── .env.example       # Environment template
-├── .gitignore         # Git ignore rules
-├── README.md          # This file
-├── docker/            # Docker configuration files
-│   ├── n8n/
-│   └── postgres/
-├── data/              # Persistent data volumes
-│   ├── n8n/
-│   └── postgres/
-├── workflows/         # n8n workflow exports
-│   └── linkedin/
-├── docs/              # Documentation
-│   └── setup.md
-└── scripts/           # Utility scripts
-    ├── backup.sh
-    └── restore.sh
+AI-Automation/
+├── docker/
+├── data/
+├── docs/
+├── scripts/
+├── workflows/
+├── docker-compose.yml
+├── .env.example
+├── .gitignore
+└── README.md
 ```
 
-## Scripts
+## 🚀 Getting Started
 
-- `scripts/backup.sh` - Backup n8n workflows and database
-- `scripts/restore.sh` - Restore from backup
+### Clone
+
+```bash
+git clone https://github.com/gourusaiteja1291-beep/AI-Automation.git
+```
+
+### Start
+
+```bash
+docker compose up -d
+```
+
+### Open
+
+```
+http://localhost:5678
+```
+
+## Roadmap
+
+- [x] Docker
+- [x] PostgreSQL
+- [x] n8n
+- [ ] LinkedIn Automation
+- [ ] Gmail Automation
+- [ ] Gemini AI
+- [ ] OpenAI
+- [ ] WhatsApp Automation
+- [ ] AI Agents
+- [ ] AWS Deployment
